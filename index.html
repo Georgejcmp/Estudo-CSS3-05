@@ -1,37 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Caixa</title>
+    <title>Document</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
         h1 {
-            background-color: rgb(157, 160, 163);
-            height: 300px;
-            width: 300px;
-        
-            border: 10px solid gray;
+            box-shadow: 1px 1px 1px 1px rgba(58, 58, 58, 0.11);
+        }
+        header{
+           background-color: white;
+           padding: 10px;
+           margin: 10px;
+        }
 
-            padding: 10px;
+        nav {
+           background-color: rgb(77, 78, 78);
+           padding: 10px;
+           box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.493);;
+        }
 
-            margin: 20px 20px 40px 20px;
+        nav > a {
+           text-decoration: none;
+           color: white;
+           font-weight: bolder;
+           margin-right: 40px;
+        }
 
-            outline: 10px groove rebeccapurple;
-
+        nav > a:hover {
+            text-decoration: underline;
            
         }
 
-        a {
-            border-width: 5px;
-            border-style: dotted;
-            border-color: darkblue;
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
         }
+
+        article {
+           background-color: rgb(185, 189, 190);
+           padding: 5px;
+        }
+
+        article > aside {
+           background-color: rgb(96, 99, 102);
+        
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+           
     </style>
 </head>
 <body>
-    <h1>Exemplo de caixa box-level</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci mollitia tempore eveniet modi explicabo rerum, recusandae dignissimos voluptatibus minus sit magni possimus expedita, assumenda ea delectus eos? Soluta, ex assumenda. <a href="https://www.google.com.br/"> google </a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe asperiores quibusdam quos velit amet vero, nisi tempora excepturi inventore unde dolor repudiandae! Et, asperiores modi. Vel voluptatem corrupti rem. </p>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas Tecnologia</p>
+        </section>
+        <section id="noticas">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta blanditiis, aliquid perspiciatis explicabo quis temporibus, asperiores expedita assumenda impedit dignissimos odit nulla voluptas! Officiis architecto optio fugiat saepe aliquid.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por George Moreno</p>
+    </footer>
+    
 </body>
 </html>
